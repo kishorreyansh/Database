@@ -1,0 +1,598 @@
+SELECT: Retrieves data from one or more tables.
+
+
+INSERT: Adds new rows to a table.
+
+
+UPDATE: Modifies existing data in a table.
+
+
+DELETE: Removes rows from a table.
+
+
+CREATE TABLE: Defines a new table and its columns.
+
+
+ALTER TABLE: Modifies an existing table structure.
+
+
+DROP TABLE: Deletes a table and its data.
+
+
+CREATE INDEX: Creates an index on a table for faster query performance.
+
+
+DROP INDEX: Deletes an index.
+
+
+CREATE VIEW: Defines a virtual table based on a SELECT query.
+
+
+DROP VIEW: Deletes a view.
+
+
+GRANT: Provides specific privileges to users or roles.
+
+
+REVOKE: Removes specific privileges from users or roles.
+
+
+COMMIT: Saves all changes made during the current transaction.
+
+
+ROLLBACK: Undoes all changes made during the current transaction.
+
+
+SAVEPOINT: Sets a point within a transaction to which you can roll back.
+
+
+TRUNCATE: Removes all rows from a table, but keeps the table structure.
+
+
+CREATE DATABASE: Creates a new database.
+
+
+DROP DATABASE: Deletes a database and all its objects.
+
+
+USE: Selects a database to work with.
+
+
+EXEC: Executes a stored procedure or a SQL string.
+
+
+EXPLAIN: Provides information about how SQL statements are executed.
+
+
+DESCRIBE: Displays the structure of a table.
+
+
+SET: Changes the value of a variable or setting.
+
+
+CREATE PROCEDURE: Defines a new stored procedure.
+
+
+DROP PROCEDURE: Deletes a stored procedure.
+
+
+CREATE FUNCTION: Defines a new function.
+
+
+DROP FUNCTION: Deletes a function.
+
+
+CREATE TRIGGER: Defines a new trigger that executes in response to certain events.
+
+
+DROP TRIGGER: Deletes a trigger.
+
+
+CREATE SCHEMA: Defines a new schema.
+
+
+DROP SCHEMA: Deletes a schema.
+
+
+ALTER USER: Modifies a database user.
+
+
+CREATE USER: Defines a new database user.
+
+
+DROP USER: Deletes a database user.
+
+
+LOCK TABLE: Prevents other users from modifying a table.
+
+
+UNLOCK TABLE: Releases a previously acquired lock on a table.
+
+
+RENAME TABLE: Changes the name of a table.
+
+
+RENAME COLUMN: Changes the name of a column.
+
+
+COMMENT: Adds a comment to the data dictionary.
+
+
+CREATE SEQUENCE: Creates a sequence object for generating unique numbers.
+
+
+ALTER SEQUENCE: Modifies an existing sequence.
+
+
+DROP SEQUENCE: Deletes a sequence.
+
+
+ANALYZE: Collects statistics about a table or index to improve query performance.
+
+
+CHECKPOINT: Forces a write of all dirty buffers to disk.
+
+
+VACUUM: Reclaims storage occupied by dead tuples in PostgreSQL.
+
+
+CLUSTER: Reorganizes a table based on an index.
+
+
+WITH: Defines a common table expression (CTE) for temporary use within a query.
+
+
+REINDEX: Rebuilds an index.
+
+
+LISTEN: Listens for a notification in PostgreSQL.
+
+
+NOTIFY: Sends a notification in PostgreSQL.
+
+
+DISCARD: Resets session state (PostgreSQL).
+
+
+COPY: Copies data between a table and a file.
+
+
+SET TRANSACTION: Sets the characteristics of the current transaction.
+
+
+SHOW: Displays the current value of a configuration parameter.
+
+
+RESET: Resets the value of a configuration parameter to its default.
+
+
+COMMENT ON: Adds comments to database objects.
+
+
+ALTER INDEX: Modifies the structure of an existing index.
+
+
+ALTER VIEW: Modifies an existing view.
+
+
+ALTER SEQUENCE: Changes the properties of an existing sequence.
+
+
+ALTER DATABASE: Modifies an existing database.
+
+
+ALTER SCHEMA: Changes the definition of an existing schema.
+
+
+ALTER PROCEDURE: Modifies an existing stored procedure.
+
+
+ALTER FUNCTION: Changes the properties of an existing function.
+
+
+ALTER TRIGGER: Changes the definition of an existing trigger.
+
+
+ALTER EVENT: Modifies an existing event (in databases that support event scheduling, like MySQL).
+
+
+CREATE EVENT: Schedules an event for future execution (in databases that support event scheduling).
+
+
+DROP EVENT: Deletes a scheduled event.
+
+
+MERGE: Performs insert, update, or delete operations on a target table based on the results of a join with a source table.
+
+
+UPSERT: Inserts rows into a table, updating them if they already exist (syntax varies by database).
+
+
+DEALLOCATE: Releases a prepared statement.
+
+
+PREPARE: Creates a prepared statement for execution.
+
+
+EXECUTE: Executes a prepared statement.
+
+
+FETCH: Retrieves rows from a result set of a cursor.
+
+
+CURSOR: Declares a cursor for iteration over a result set.
+
+
+CLOSE: Closes a cursor.
+
+
+REVOKE: Removes previously granted privileges from a user or role.
+
+
+GRANT OPTION: Grants the ability to grant privileges to other users.
+
+
+START TRANSACTION: Begins a new transaction.
+
+
+SET ROLE: Changes the current role for the session.
+
+
+ALTER ROLE: Modifies an existing role.
+
+
+DROP ROLE: Deletes a role.
+
+
+CREATE ROLE: Defines a new role.
+
+
+DISABLE TRIGGER: Disables a trigger on a table.
+
+
+ENABLE TRIGGER: Enables a trigger on a table.
+
+
+DISABLE RULE: Disables a rule on a table (PostgreSQL).
+
+
+ENABLE RULE: Enables a rule on a table (PostgreSQL).
+
+
+DISABLE CONSTRAINT: Disables a constraint on a table.
+
+
+ENABLE CONSTRAINT: Enables a constraint on a table.
+
+
+VALIDATE CONSTRAINT: Validates a constraint on a table.
+
+
+ADD CONSTRAINT: Adds a new constraint to a table.
+
+
+DROP CONSTRAINT: Deletes a constraint from a table.
+
+
+CHECK: Adds a check constraint to a table.
+
+
+FOREIGN KEY: Defines a foreign key constraint on a table.
+
+
+PRIMARY KEY: Defines a primary key constraint on a table.
+
+
+UNIQUE: Defines a unique constraint on a table.
+
+
+EXCEPT: Returns distinct rows from the first query that aren't in the second query.
+
+
+INTERSECT: Returns distinct rows that are output by both queries.
+
+
+UNION: Combines the result sets of two queries and returns distinct rows.
+
+
+UNION ALL: Combines the result sets of two queries and returns all rows, including duplicates.
+
+
+CASCADE: Applies changes to dependent objects.
+
+
+RESTRICT: Prevents changes if there are dependent objects.
+
+
+CASE: Provides conditional logic within SQL statements.
+
+
+COALESCE: Returns the first non-null value in a list of arguments.
+
+
+NULLIF: Returns null if two expressions are equal.
+
+
+GREATEST: Returns the greatest value in a list of expressions.
+
+
+LEAST: Returns the least value in a list of expressions.
+
+
+SUBQUERY: Allows nested queries within a SQL statement.
+
+
+WINDOW FUNCTIONS: Performs calculations across a set of table rows related to the current row.
+
+
+OVER: Defines a window for window functions.
+
+
+PARTITION BY: Divides the result set into partitions for window functions.
+
+
+RANK: Assigns a rank to each row within a partition of a result set.
+
+
+DENSE_RANK: Similar to RANK but without gaps in ranking values.
+
+
+ROW_NUMBER: Assigns a unique sequential integer to rows within a partition.
+
+
+NTILE: Distributes rows into a specified number of approximately equal groups.
+
+
+LAG: Accesses data from a previous row in the same result set.
+
+
+LEAD: Accesses data from a subsequent row in the same result set.
+
+
+FIRST_VALUE: Returns the first value in an ordered set of values.
+
+
+LAST_VALUE: Returns the last value in an ordered set of values.
+
+
+CUME_DIST: Calculates the cumulative distribution of a value in a set of values.
+
+
+PERCENT_RANK: Calculates the relative rank of a row within a group.
+
+
+GROUPING SETS: Allows multiple groupings in a single query.
+
+
+ROLLUP: Generates subtotals and grand totals in a query.
+
+
+CUBE: Generates subtotals for all combinations of groupings in a query.
+
+
+PIVOT: Rotates rows into columns (specific to some databases like SQL Server).
+
+
+UNPIVOT: Rotates columns into rows (specific to some databases like SQL Server).
+
+
+JSON Functions: Allows querying and manipulation of JSON data (specific to some databases).
+
+
+XML Functions: Allows querying and manipulation of XML data (specific to some databases).
+
+
+ARRAY Functions: Allows querying and manipulation of array data (specific to some databases).
+
+
+HSTORE: A key-value store within a single PostgreSQL table column.
+
+
+FULLTEXT SEARCH: Provides full-text search capabilities (specific to some databases).
+
+
+MATERIALIZED VIEW: Stores the result of a query physically and can be refreshed.
+
+
+REFRESH MATERIALIZED VIEW: Updates the data in a materialized view.
+
+
+CONNECT BY: Used for hierarchical queries in Oracle.
+
+
+START WITH: Specifies the root of a hierarchical query in Oracle.
+
+
+NOCYCLE: Prevents infinite loops in hierarchical queries in Oracle.
+
+
+SYNONYM: Creates an alias for a database object (specific to some databases).
+
+
+PACKAGE: Groups related procedures, functions, variables, and other package contents (specific to Oracle).
+
+
+AUTHID: Specifies whether a PL/SQL package or subprogram executes with the privileges of its definer or invoker (specific to Oracle).
+
+
+PRAGMA: Provides additional instructions to the compiler (specific to Oracle).
+
+
+PIPELINED: Allows a table function to return rows iteratively (specific to Oracle).
+
+
+CROSS APPLY: Applies a table-valued function to each row (specific to SQL Server).
+
+
+OUTER APPLY: Similar to CROSS APPLY but includes rows with no matches (specific to SQL Server).
+
+
+SAMPLE: Retrieves a random sample of data from a table.
+
+
+FOR UPDATE: Locks selected rows so they cannot be updated by other transactions.
+
+
+FETCH FIRST: Limits the number of rows returned by a query.
+
+
+SKIP LOCKED: Skips locked rows in the result set (specific to some databases).
+
+
+FOR XML: Formats query results as XML (specific to SQL Server).
+
+
+FOR JSON: Formats query results as JSON (specific to SQL Server).
+
+
+ALTER MATERIALIZED VIEW: Changes the structure or properties of a materialized view.
+
+
+DROP MATERIALIZED VIEW: Deletes a materialized view.
+
+
+ALTER SYSTEM: Modifies system-level settings (specific to Oracle and some other RDBMS).
+
+
+ALTER SESSION: Changes session-level settings (specific to Oracle and some other RDBMS).
+
+
+DBMS_SCHEDULER: Schedules and manages jobs (specific to Oracle).
+
+
+DBMS_STATS: Gathers optimizer statistics (specific to Oracle).
+
+
+PRAGMA AUTONOMOUS_TRANSACTION: Allows a transaction to be independent of the main transaction (specific to Oracle).
+
+
+EXECUTE IMMEDIATE: Executes a dynamic SQL statement (specific to Oracle).
+
+
+CTAS (CREATE TABLE AS SELECT): Creates a new table based on the result of a SELECT query.
+
+
+ALTER TYPE: Modifies an existing user-defined type (specific to some databases).
+
+
+CREATE TYPE: Defines a new user-defined data type (specific to some databases).
+
+
+DROP TYPE: Deletes a user-defined data type.
+
+
+ALTER OPERATOR: Modifies an existing operator (specific to some databases).
+
+
+CREATE OPERATOR: Defines a new operator (specific to some databases).
+
+
+DROP OPERATOR: Deletes an operator.
+
+
+CREATE AGGREGATE: Defines a new aggregate function (specific to PostgreSQL).
+
+
+DROP AGGREGATE: Deletes an aggregate function.
+
+
+ALTER FUNCTION: Modifies the definition of an existing function.
+
+
+ALTER PROCEDURE: Modifies the definition of an existing stored procedure.
+
+
+ALTER TRIGGER: Modifies the definition of an existing trigger.
+
+
+ALTER VIEW: Changes the definition of an existing view.
+
+
+SET CONSTRAINT: Sets the mode of a constraint (deferred or immediate).
+
+
+SET TRANSACTION ISOLATION LEVEL: Sets the isolation level for the current transaction.
+
+
+LOCK TABLE: Locks a table for a specific transaction.
+
+
+ALTER TABLESPACE: Modifies the properties of a tablespace (specific to Oracle).
+
+
+DROP TABLESPACE: Deletes a tablespace and all its contents (specific to Oracle).
+
+
+CREATE TABLESPACE: Defines a new tablespace (specific to Oracle).
+
+
+ALTER INDEX REBUILD: Rebuilds an existing index (specific to some databases).
+
+
+VACUUM ANALYZE: Reclaims storage and updates statistics in PostgreSQL.
+
+
+LISTEN/NOTIFY: Implements a publish/subscribe model for inter-process communication (specific to PostgreSQL).
+
+
+DISABLE/ENABLE RULE: Disables or enables a rewrite rule on a table (specific to PostgreSQL).
+
+
+DISABLE/ENABLE CONSTRAINT: Disables or enables a constraint.
+
+
+DROP RULE: Deletes a rewrite rule (specific to PostgreSQL).
+
+
+ALTER RULE: Modifies an existing rewrite rule (specific to PostgreSQL).
+
+
+CREATE RULE: Defines a new rewrite rule (specific to PostgreSQL).
+
+
+ALTER SYSTEM SET: Changes a system parameter (specific to Oracle).
+
+
+ALTER DATABASE LINK: Modifies a database link (specific to Oracle).
+
+
+CREATE DATABASE LINK: Defines a new database link (specific to Oracle).
+
+
+DROP DATABASE LINK: Deletes a database link (specific to Oracle).
+
+
+ALTER MATERIALIZED VIEW LOG: Changes a materialized view log.
+
+
+CREATE MATERIALIZED VIEW LOG: Defines a log to capture changes for a materialized view.
+
+
+DROP MATERIALIZED VIEW LOG: Deletes a materialized view log.
+
+
+GRANT CONNECT THROUGH: Grants the ability to connect through a specific user (specific to Oracle).
+
+
+ALTER DATABASE BEGIN BACKUP: Puts a database into backup mode (specific to Oracle).
+
+
+ALTER DATABASE END BACKUP: Ends backup mode for a database (specific to Oracle).
+
+
+ALTER DATABASE RENAME FILE: Renames a database file (specific to Oracle).
+
+
+ALTER DATABASE MOUNT: Mounts a database (specific to Oracle).
+
+
+ALTER DATABASE OPEN: Opens a mounted database (specific to Oracle).
+
+
+ALTER DATABASE RECOVER: Recovers a database (specific to Oracle).
+
+
+FLASHBACK TABLE: Restores a table to a previous state (specific to Oracle).
+
+
+FLASHBACK DATABASE: Restores the entire database to a previous state (specific to Oracle).
